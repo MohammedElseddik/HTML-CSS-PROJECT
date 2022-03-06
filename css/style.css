@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 :root {
     --color-primary: #2584ff;
     --color-secondary: #00d9ff;
@@ -169,3 +173,63 @@ a {
     border-radius: 100%;
 }
 
+/* Buttons */
+
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background-color: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #3a8ffd;
+    color: #fff;
+}
+
+.btn--secondary {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background-color: #00c8eb;
+    color: #fff;
+}
+
+.btn--primary {
+    background-color: var(--color-accent);
+    color: #fff;
+}
+
+.btn--primary:hover {
+    background-color: #ff542a;
+    color: #fff;
+}
+
+.btn-block {
+    width: 100%;
+    display: inline-block;
+}
+
+.btn-outline {
+    background-color: #fff;
+    color: var(--color-body-text);
+    border: 2px solid var(--color-heading);
+}
+
+@media screen and (min-width: 1024px) {
+    .btn {
+        font-size: 1.5rem;
+    }
+}
