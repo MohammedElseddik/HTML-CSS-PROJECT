@@ -233,3 +233,25 @@ a {
         font-size: 1.5rem;
     }
 }
+
+/* Input */
+
+.input {
+    border-radius: 30px;
+    border: 1px solid #ccc;
+    color: var(--color-body-text);
+    font-size: 2rem;
+    outline: none;
+    padding: 1.5rem 3.5rem;
+}
+
+::placeholder {
+    color: var(--color-body-text);
+}
+
+@media screen and (min-width: 1024px) {
+    .input {
+      font-size: 1.5rem;
+    }
+}
+
