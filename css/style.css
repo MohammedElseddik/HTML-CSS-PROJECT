@@ -8,6 +8,8 @@
     --color-accent: #ff3400;
     --color-heading: #210e6b;
     --color-body-text: #e5e4e9;
+    --color-border: #ccc;
+    --border-radius: 30px;
 }
 
 /* Typography */
@@ -207,12 +209,12 @@ a {
     color: #fff;
 }
 
-.btn--primary {
+.btn--accent {
     background-color: var(--color-accent);
     color: #fff;
 }
 
-.btn--primary:hover {
+.btn--accent:hover {
     background-color: #ff542a;
     color: #fff;
 }
@@ -224,8 +226,8 @@ a {
 
 .btn-outline {
     background-color: #fff;
-    color: var(--color-body-text);
     border: 2px solid var(--color-heading);
+    color: var(--color-body-text);
 }
 
 @media screen and (min-width: 1024px) {
@@ -237,7 +239,7 @@ a {
 /* Input */
 
 .input {
-    border-radius: 30px;
+    border-radius: var(--border-radius);
     border: 1px solid #ccc;
     color: var(--color-body-text);
     font-size: 2rem;
@@ -255,3 +257,20 @@ a {
     }
 }
 
+/* Input Groups */
+
+.input-group {
+    border-radius: var(--border-radius);
+    border: 1px solid var(--color-border);
+    display: flex;
+}
+
+.input-group .input {
+    border: none;
+    flex-grow: 1;
+    padding: 1.5rem 1rem;
+}
+
+.input-group .btn {
+    margin: 5px;
+}
